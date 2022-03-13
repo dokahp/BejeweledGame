@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="icon" href="./assets/img/svg/blue.svg" />
+    <title>Bejeweled</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="start-screen container">
+            <img class="main-image" src="./assets/img/svg/mainDiamant.svg" alt="main diamant img"/>
+            <div class="game-status-wrapper">
+                <div class="game-status"></div>
+                <div class="your-score"></div>
+            </div>
+            <div class="new-continue-game">NEW GAME</div>
+            <div class="records">YOUR RECORDS</div>
+        </div>
+        <div class="records-screen container">
+            <div class="table-image-wrapper">
+                <img class="records-image" src="./assets/img/svg/Trophy.svg" alt="records trophy img"/>
+                <table class="records-table">
+                    <tr>
+                        <td>PLACE</td>
+                        <td>SCORE</td>
+                        <td>LEVEL</td>
+                        <td>DATE</td>
+                    </tr>
+                    <tr>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                    </tr>
+                    <tr>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                    </tr>
+                    <tr>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                    </tr>
+                    <tr>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                    </tr>
+                    <tr>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                    </tr>
+                    <tr>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                    </tr>
+                    <tr>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                    </tr>
+                    <tr>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                    </tr>
+                    <tr>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                    </tr>
+                    <tr>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                        <td class="record-cell">-</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="back-to-menu">BACK TO MENU</div>
+            
+        </div>
+        <table class="table">
+            <div class="table-head">
+                <div class="score">SCORE: </span><span class="score-count"></div>
+                <div class="mobile-life-wrapper">
+                    <span class="life-count score"></span>
+                    <span class="delimeter score">x</span>
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="mobile-heart">
+                </div>
+                <div class="life-wrapper">
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="heart">
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="heart">
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="heart">
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="heart">
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="heart">
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="heart">
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="heart">
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="heart">
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="heart">
+                    <img src="./assets/img/svg/full_heart.svg" alt="life-count-icon" class="heart">
+                </div>
+                <div class="level-wrapper">
+                    <div class="level">Level: <span class="level-now"></span></div>
+                    <img src="./assets/img/svg/high-volume.svg" alt="volume" title="Switch volume" class="volume">
+                    <img src="./assets/img/svg/white-flag.svg" alt="give up" class="give-up" title="Give Up and LOSE">
+                    <img src="./assets/img/svg/refresh.svg" title="Refresh field" alt="refresh field button" class="refresh">
+                    <div class="points-to-next">Next: <span class="next-level-points"></span></div>
+                </div>
+            </div>
+            <tr>
+                <td class="cell" data-cell="00"></td>
+                <td class="cell" data-cell="01"></td>
+                <td class="cell" data-cell="02"></td>
+                <td class="cell" data-cell="03"></td>
+                <td class="cell" data-cell="04"></td>
+                <td class="cell" data-cell="05"></td>
+                <td class="cell" data-cell="06"></td>
+                <td class="cell" data-cell="07"></td>
+            </tr>
+            <tr>
+                <td class="cell" data-cell="10"></td>
+                <td class="cell" data-cell="11"></td>
+                <td class="cell" data-cell="12"></td>
+                <td class="cell" data-cell="13"></td>
+                <td class="cell" data-cell="14"></td>
+                <td class="cell" data-cell="15"></td>
+                <td class="cell" data-cell="16"></td>
+                <td class="cell" data-cell="17"></td>
+            </tr>
+            <tr>
+                <td class="cell" data-cell="20"></td>
+                <td class="cell" data-cell="21"></td>
+                <td class="cell" data-cell="22"></td>
+                <td class="cell" data-cell="23"></td>
+                <td class="cell" data-cell="24"></td>
+                <td class="cell" data-cell="25"></td>
+                <td class="cell" data-cell="26"></td>
+                <td class="cell" data-cell="27"></td>
+            </tr>
+            <tr>
+                <td class="cell" data-cell="30"></td>
+                <td class="cell" data-cell="31"></td>
+                <td class="cell" data-cell="32"></td>
+                <td class="cell" data-cell="33"></td>
+                <td class="cell" data-cell="34"></td>
+                <td class="cell" data-cell="35"></td>
+                <td class="cell" data-cell="36"></td>
+                <td class="cell" data-cell="37"></td>
+            </tr>
+            <tr>
+                <td class="cell" data-cell="40"></td>
+                <td class="cell" data-cell="41"></td>
+                <td class="cell" data-cell="42"></td>
+                <td class="cell" data-cell="43"></td>
+                <td class="cell" data-cell="44"></td>
+                <td class="cell" data-cell="45"></td>
+                <td class="cell" data-cell="46"></td>
+                <td class="cell" data-cell="47"></td>
+            </tr>
+            <tr>
+                <td class="cell" data-cell="50"></td>
+                <td class="cell" data-cell="51"></td>
+                <td class="cell" data-cell="52"></td>
+                <td class="cell" data-cell="53"></td>
+                <td class="cell" data-cell="54"></td>
+                <td class="cell" data-cell="55"></td>
+                <td class="cell" data-cell="56"></td>
+                <td class="cell" data-cell="57"></td>
+            </tr>
+            <tr>
+                <td class="cell" data-cell="60"></td>
+                <td class="cell" data-cell="61"></td>
+                <td class="cell" data-cell="62"></td>
+                <td class="cell" data-cell="63"></td>
+                <td class="cell" data-cell="64"></td>
+                <td class="cell" data-cell="65"></td>
+                <td class="cell" data-cell="66"></td>
+                <td class="cell" data-cell="67"></td>
+            </tr>
+            <tr>
+                <td class="cell" data-cell="70"></td>
+                <td class="cell" data-cell="71"></td>
+                <td class="cell" data-cell="72"></td>
+                <td class="cell" data-cell="73"></td>
+                <td class="cell" data-cell="74"></td>
+                <td class="cell" data-cell="75"></td>
+                <td class="cell" data-cell="76"></td>
+                <td class="cell" data-cell="77"></td>
+            </tr>
+        </table>
+        <div class="alert container">
+            <p>Impossible</p>
+            <p>Impossible, refresh costs 1 life, you only have 1</p>
+            <button class="ok">Ok</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://github.com/dokahp" target="blank">
+                <img src="./assets/img/svg/github.svg" alt="My github" class="git">
+            </a>
+            <a href="https://www.linkedin.com/in/vitaliy-dreko-938b87228/" target="_blank">
+                <img src="./assets/img/svg/linkedin.svg" alt="My linkedin" class="linkedin" />
+            </a>
+        </div>
+        <p class="powered">2022 Bejeweled by Vitaliy Dreko</p>
+        <a href="https://rs.school/js-stage0/" target="_blank">
+            <img src="./assets/img/svg/rss.svg" alt="Rolling Scrope School" class="rss">
+        </a>
+        <script type="module" src="./assets/scripts/index.js"></script>
+</body>
+
+</html>
